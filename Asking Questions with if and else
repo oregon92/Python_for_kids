@@ -1,0 +1,90 @@
+# A block of code is a grouped set of programming statements.
+age = 25
+if age > 20:
+ print('You are too old!')
+ print('Why are you here?')
+ print('''Why aren't you mowing a lawn or sorting papers?''')
+
+# Code that is at the same position (indented the same number of spaces from the left margin) is grouped into a block
+# We group statements together into blocks because they are related. The statements need to be run together.
+# When you change the indentation, you’re generally creating new blocks.
+# Blocks 2 and 3 might have the same indentation, but are considered different blocks if there is a block with less indentation (fewer spaces) between them
+
+# == Equal to
+# != Not equal to
+# >= Greater than or equal to
+# <= Less than or equal to
+
+age = 100
+if age > 10:
+ print('You are too old for my jokes!')
+age = 10
+if age == 10:
+ print('''What's brown and sticky? A stick!!''')
+
+ print('want to hear a dirty joke?')
+age = 12
+if age == 12:
+ print("A pig fell in the mud!")
+else:
+ print("Shh. It's a secret.")
+
+# We can extend an if statement even further with elif (which is short for else-if).
+# For example, we can check if a person’s age is 10, 11, or 12 (and so on)
+# And have our program do something different based on the answer.
+
+age = 13
+if age == 10:
+    print("What do you call an unhappy cranberry?")
+    print("A blueberry!!!")
+elif age == 11:
+ print("What did the green grape say to the blue grape?")
+ print("Breathe! Breathe!")
+elif age == 12:
+ print("What did 0 say to 8?")
+ print("Hi guys!")
+elif age == 13:
+ print("Why wasn't 10 afraid of 7?")
+ print("Because rather than eating 9, 7 8 pi.")
+else:
+ print("Huh?")
+
+if age == 10 or age == 11 or age == 12 or age == 13:
+ print('What is 13 + 49 + 84 + 155 + 97? A headache!')
+else:
+ print('Huh?')
+
+myval = None
+if myval == None:
+ print("The variable myval doesn't have a value")
+
+
+# User input is what a person enters on the keyboard
+# User input comes into Python as a string
+# when you type the number 10 on your keyboard, Python saves the number 10 into a variable as a string, not a number
+# What’s the difference between the number 10 and the string'10'?
+# Both look the same to us, with the only difference being that
+# one is surrounded by quotes. But to a computer, the two are very different.
+
+age = 10
+if age == 10:
+ print("What's the best way to speak to a monster?")
+ print("From as far away as possible!")
+
+# Python has magic functions that can turn strings into numbers and numbers into strings
+# converted_age = str(age)
+# converted_age = int(age)
+# converted_age = float(age) -- use this if there is a decimal (ex: 10.5)
+
+age = '10'
+converted_age = int(age)
+if converted_age == 10:
+ print("What's the best way to speak to a monster?")
+ print("From as far away as possible!")
+
+money = 900
+if money > 1000:
+ print("I'm rich!!")
+else:
+ print("I'm not rich!!")
+ print("But I might be later...")

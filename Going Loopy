@@ -1,0 +1,33 @@
+# Instead of typing the same thing over and over, you can use a for loop to reduce the amount of typing and repetition
+
+for x in range(0, 5):
+ print('hello')
+
+# Start counting from 0 and stop before reaching 5
+# For each number we count, store the value in the variable x
+# We could also use the x in our print statement to count the hellos
+
+for x in range(0, 5):
+ print('hello %s' % x)
+
+# For each item in wizard_list, store the value in the variable i, and then print the contents of that variable.
+wizard_list = ['spider legs', 'toe of frog', 'snail tongue','bat wing', 'slug butter', 'bear burp']
+for i in wizard_list:
+ print(i)
+
+# Otherwise you would have to print this for each line on the list
+# print(wizard_list[0])
+# print(wizard_list[1])
+# etc.
+
+found_coins = 20
+magic_coins = 70
+stolen_coins = 3
+coins = found_coins
+for week in range(1, 5):
+    coins = coins + magic_coins - stolen_coins
+    print('Week %s = %s' % (week, coins))
+
+# Each time it loops, the variable week is loaded with the next number in the range of 1 through 52
+# A "For loop" is a loop of a specific length
+# A "While loop" is a loop that is used when you don’t know ahead of time when it needs to stop looping

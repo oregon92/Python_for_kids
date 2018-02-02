@@ -1,0 +1,33 @@
+# Multiplication and division have a higher order than addition and subtraction
+# Meaning  that they’re performed first
+
+print(5 + 30 * 20)
+# 30 and 20 are multiplied first, and the number 5 is added
+
+print((5 + 30) * 20)
+# add 5 to 30 and then multiply the result by 20
+
+fred = 100
+print(fred)
+
+fred = 200
+print(fred)
+john = fred
+print(john)
+
+number_of_coins = 200
+print(number_of_coins)
+
+print(20 + 10 * 365)
+print(3 * 52)
+print(3670 - 156)
+print(20 + 10 * 365 - 3 * 52)
+
+found_coins = 20
+magic_coins = 10
+stolen_coins = 3
+print(found_coins + magic_coins * 365 - stolen_coins * 52)
+
+magic_coins = 13
+print(found_coins + magic_coins * 365 - stolen_coins * 52)
+

@@ -1,0 +1,29 @@
+# A function has three parts: a name, parameters, and a body
+def testfunc(myname):
+    print('hello %s' % myname)
+testfunc('briar')
+
+def savings(pocket_money, paper_route, spending):
+    return pocket_money + paper_route - spending
+print(savings(10, 10, 5))
+
+# Scope
+# A variable that’s inside the body of a function can’t be used again when the function has finished running because it exists only inside the function
+
+def variable_test():
+ first_variable = 10
+ second_variable = 20
+ return first_variable * second_variable
+print(variable_test())
+
+# let’s define a variable before we create our function, and then try using it inside the function
+another_variable = 100
+def variable_test_2():
+    first_variable = 10
+    second_variable = 20
+    return first_variable * second_variable * another_variable
+print(variable_test_2())
+
+# if you were designing a simulation game, and you wanted the world of the game to change realistically, you could calculate the current date and time using a built-in module called time:
+import time
+print(time.asctime())
